@@ -23,7 +23,7 @@ public class QuestionDTO implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	private String questionId;
-	private String question;
+	private String pollQuestion;
 	private String optionType;
 	private int totalVotes;
 	private List<OptionDTO> options;
@@ -50,15 +50,15 @@ public class QuestionDTO implements Serializable {
 	/**
 	 * @return the question
 	 */
-	public String getQuestion() {
-		return this.question;
+	public String getPollQuestion() {
+		return this.pollQuestion;
 	}
 
 	/**
-	 * @param question the question to set
+	 * @param pollQuestion the question to set
 	 */
-	public void setQuestion(final String question) {
-		this.question = question;
+	public void setPollQuestion(final String pollQuestion) {
+		this.pollQuestion = pollQuestion;
 	}
 
 	/**
