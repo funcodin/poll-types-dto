@@ -8,6 +8,8 @@ import java.util.List;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlElementWrapper;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
@@ -32,7 +34,9 @@ public class QuestionListDTO implements Serializable {
 	// if this is the last Payload.
 	private boolean isLastPage;
 
-	private List<QuestionDTO> questionsDto;
+	@XmlElementWrapper(name = "questions")
+	@XmlElement(name = "question")
+	private List<QuestionDTO> questions;
 
 	/**
 	 * @return the lastQuestionIndex
@@ -79,15 +83,15 @@ public class QuestionListDTO implements Serializable {
 	/**
 	 * @return the questionsDto
 	 */
-	public List<QuestionDTO> getQuestionsDto() {
-		return questionsDto;
+	public List<QuestionDTO> getQuestions() {
+		return questions;
 	}
 
 	/**
-	 * @param questionsDto the questionsDto to set
+	 * @param questions the questionsDto to set
 	 */
-	public void setQuestionsDto(List<QuestionDTO> questionsDto) {
-		this.questionsDto = questionsDto;
+	public void setQuestions(List<QuestionDTO> questions) {
+		this.questions = questions;
 	}
 
 }
