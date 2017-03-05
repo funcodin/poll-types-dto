@@ -25,8 +25,6 @@ public class QuestionListDTO implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
-	// This will be used for pagination
-
 	// Last index of the result
 	private int lastQuestionIndex;
 	// Number of results to be returned.
