@@ -21,9 +21,6 @@ public class UserPollDTO implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
-	// This need to return total count of answers
-	// count of each options;
-
 	private String userId;
 	private String questionId;
 	private String optionId;
