@@ -27,9 +27,10 @@ public class QuestionDTO implements Serializable {
 	private String optionType;
 	private int totalVotes;
 	private List<OptionDTO> options;
+	private String userId;
+	private boolean isAnswered;
 
 	// Tommy this is for future use. No need to worry about it
-	private String userId;
 	private String qrCodeUrl;
 	private String mediaUrl;
 
@@ -143,6 +144,20 @@ public class QuestionDTO implements Serializable {
 	 */
 	public void setOptions(final List<OptionDTO> options) {
 		this.options = options;
+	}
+
+	/**
+	 * @return the isAnswered
+	 */
+	public boolean isAnswered() {
+		return isAnswered;
+	}
+
+	/**
+	 * @param isAnswered the isAnswered to set
+	 */
+	public void setAnswered(boolean isAnswered) {
+		this.isAnswered = isAnswered;
 	}
 
 }
