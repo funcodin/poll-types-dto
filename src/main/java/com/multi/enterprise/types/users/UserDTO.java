@@ -30,6 +30,9 @@ public class UserDTO implements Serializable {
 	private String fullName;
 	private String email;
 	private String contactNumber;
+	private int questionsAsked;
+	private int questionsAnswered;
+	private int commentsMade;
 
 	/**
 	 * @return the userId
@@ -141,6 +144,48 @@ public class UserDTO implements Serializable {
 	 */
 	public void setContactNumber(String contactNumber) {
 		this.contactNumber = contactNumber;
+	}
+
+	/**
+	 * @return the questionsAsked
+	 */
+	public int getQuestionsAsked() {
+		return questionsAsked;
+	}
+
+	/**
+	 * @param questionsAsked the questionsAsked to set
+	 */
+	public void setQuestionsAsked(int questionsAsked) {
+		this.questionsAsked = questionsAsked;
+	}
+
+	/**
+	 * @return the questionsAnswered
+	 */
+	public int getQuestionsAnswered() {
+		return questionsAnswered;
+	}
+
+	/**
+	 * @param questionsAnswered the questionsAnswered to set
+	 */
+	public void setQuestionsAnswered(int questionsAnswered) {
+		this.questionsAnswered = questionsAnswered;
+	}
+
+	/**
+	 * @return the commentsMade
+	 */
+	public int getCommentsMade() {
+		return commentsMade;
+	}
+
+	/**
+	 * @param commentsMade the commentsMade to set
+	 */
+	public void setCommentsMade(int commentsMade) {
+		this.commentsMade = commentsMade;
 	}
 
 }
